@@ -1,5 +1,5 @@
 {
-  "name": "@fetch/worker",
+  "name": "worker-fetch",
   "version": "1.0.0",
   "description": "fetch using webworkers",
   "main": "dist/index.js",
@@ -29,7 +29,7 @@
     "typescript": "^4.5.5"
   },
   "peerDependencies": {
-    "node-fetch": "*",
-    "worker-threads": "*"
+    "node-fetch": "^3.2.0",
+    "worker-threads": "^1.0.0"
   }
 }
