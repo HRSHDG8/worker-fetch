@@ -1,5 +1,5 @@
 {
-  "name": "worker-fetch",
+  "name": "@fetch/worker",
   "version": "1.0.0",
   "description": "fetch using webworkers",
   "main": "dist/index.js",
