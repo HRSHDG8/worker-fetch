@@ -1,0 +1,35 @@
+{
+  "name": "worker-fetch",
+  "version": "1.0.0",
+  "description": "fetch using webworkers",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HRSHDG8/worker-fetch.git"
+  },
+  "author": "HRSHDG8",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HRSHDG8/worker-fetch/issues"
+  },
+  "homepage": "https://github.com/HRSHDG8/worker-fetch#readme",
+  "devDependencies": {
+    "rollup": "^2.68.0",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "typescript": "^4.5.5"
+  },
+  "peerDependencies": {
+    "node-fetch": "*",
+    "worker-threads": "*"
+  }
+}
