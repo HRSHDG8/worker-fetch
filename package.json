@@ -1,7 +1,7 @@
 {
   "name": "worker-fetch",
-  "version": "1.0.1",
-  "description": "fetch using webworkers",
+  "version": "1.1.0",
+  "description": "fetch using web workers",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -29,7 +29,7 @@
     "typescript": "^4.5.5"
   },
   "peerDependencies": {
-    "node-fetch": "^3.2.0",
-    "worker-threads": "^1.0.0"
+    "node-fetch": "*",
+    "worker-threads": "*"
   }
 }
