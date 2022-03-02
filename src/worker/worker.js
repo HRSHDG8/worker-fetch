@@ -1,5 +1,6 @@
-const {workerData, parentPort, threadId} = require('worker_threads')
+const {workerData, parentPort, threadId, isMainThread} = require('worker_threads')
 const {url, init} = workerData
+process.env.ENABLE_LOG ? console.log(`Running on main thread :: ${isMainThread} , threadId :: ${threadId}` ): ''
 import('node-fetch')
     .then((fetch) => {
         fetch.default(url, init)

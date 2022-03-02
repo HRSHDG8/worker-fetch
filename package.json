@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:d": "set ENABLE_LOG=true && npm run test"
   },
   "repository": {
     "type": "git",
@@ -22,10 +23,14 @@
   },
   "homepage": "https://github.com/HRSHDG8/worker-fetch#readme",
   "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
     "rollup": "^2.68.0",
     "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-typescript2": "^0.31.2",
+    "ts-jest": "^27.1.3",
+    "ts-node": "^10.6.0",
     "typescript": "^4.5.5"
   },
   "peerDependencies": {
